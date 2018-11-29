@@ -62,8 +62,18 @@ body, html {
 #nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background: #FFEBEB;
+}
+
+#nav-bar a {
+    color: #41434A;
+    text-decoration: none;
+}
+
+#nav-bar a:visited {
+    color: #41434A;
+    text-decoration: none;
 }
 
 .nav-item {
@@ -72,9 +82,48 @@ body, html {
 
 /***** About Page Content ******/
 
+/*#carousel_container {
+    position: absolute;
+    width: 100vw;
+}
+
+#carousel {
+    position: absolute;
+    left: 59.5%;
+    z-index: 3;
+    background-color: grey; 
+    width: 38%;
+    height: 650px;
+    border: 30px;
+    overflow: hidden;
+}
+
+.carousel_strip {
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    display: flex;
+}
+
+.carousel_section {
+    position: relative;
+    width: 38%;
+    height: 650px;
+}
+
+.carousel_section img {
+    width: 38%;
+    height: 650px;
+}
+
+
+/*END CAROUSEL*/
+
 .about-page img {
-    width: 48%;
-    height: 750px;
+    image-orientation: from-image;
+    width: 38%;
+    height: 650px;
+    border: 30px solid white;
 }
 
 .about-page h1 {
