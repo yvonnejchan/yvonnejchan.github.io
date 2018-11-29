@@ -38,6 +38,27 @@ body, html {
     padding-top: 10px;
 }
 
+#logo1 {
+    animation: rotationone 1s linear 0s infinite forwards;  
+}
+
+#logo2 {
+    animation: rotationtwo 1s linear 0s infinite reverse;   
+}
+
+
+@keyframes rotationone {
+    0% {transform:rotate(-7deg);}
+    50% {transform:rotate(5deg);}
+    100% {transform:rotate(-7deg);}
+}
+
+@keyframes rotationtwo {
+    0% {transform:rotate(7deg);}
+    50% {transform:rotate(-5deg);}
+    100% {transform:rotate(7deg);}
+}
+
 #corner-info {
     display:flex;
     flex-direction: column;

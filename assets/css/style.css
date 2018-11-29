@@ -36,6 +36,28 @@ body, html {
 	width: 100px;
 	height: 100px;
 	padding-top: 10px;
+	/*animation: rotation 1s ease-in 0s infinite forwards;*/
+}
+
+#logo1 {
+	animation: rotationone 1s linear 0s infinite forwards;	
+}
+
+#logo2 {
+	animation: rotationtwo 1s linear 0s infinite reverse;	
+}
+
+
+@keyframes rotationone {
+	0% {transform:rotate(-7deg);}
+	50% {transform:rotate(5deg);}
+	100% {transform:rotate(-7deg);}
+}
+
+@keyframes rotationtwo {
+	0% {transform:rotate(7deg);}
+	50% {transform:rotate(-5deg);}
+	100% {transform:rotate(7deg);}
 }
 
 #corner-info {
@@ -74,7 +96,6 @@ body, html {
 #nav-bar a:visited {
 	color: #41434A;
 	text-decoration: none;
-
 }
 
 .nav-item {
